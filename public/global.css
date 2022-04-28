@@ -1,0 +1,28 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Saira;
+  src: url(webfonts/Saira-Medium.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background-color: #34050c;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Saira, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
