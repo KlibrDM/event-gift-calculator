@@ -26,6 +26,7 @@
   <div id="column-2">
     {#if catDau}
       <p id="cat-dau">{Math.round(catDau)} lei</p>
+      <p id="pers">/pers</p>
     {/if}
   </div>
 </main>
@@ -52,12 +53,18 @@
   }
   #column-2 {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
   }
   #cat-dau {
     font-size: 3em;
     margin-block-start: 0.5em;
+    margin-block-end: 0;
     line-height: 1em;
+  }
+  #pers {
+    font-size: 1.5em;
+    margin-block-start: 0.2em;
   }
   @media screen and (max-width: 680px) {
     main {
