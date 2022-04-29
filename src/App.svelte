@@ -61,20 +61,22 @@
     margin-block-start: 0.5em;
     margin-block-end: 0;
     line-height: 1em;
+    text-align: end;
   }
   #pers {
     font-size: 1.5em;
     margin-block-start: 0.2em;
   }
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 740px) {
     main {
-      width: 100vw;
+      width: 90vw;
       font-size: 10px;
     }
   }
-  @media screen and (max-height: 480px) {
+  @media screen and (max-height: 540px) {
     main {
-      height: 100vh;
+      height: 90vh;
+      overflow: auto;
       font-size: 10px;
     }
   }

@@ -57,4 +57,9 @@
     background-color: #f5f5f5;
     transform: scale(1.05);
   }
+  @media screen and (max-width: 740px) {
+    button {
+      width: 100px;
+    }
+  }
 </style>

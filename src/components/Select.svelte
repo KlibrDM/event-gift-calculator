@@ -36,4 +36,12 @@
     appearance: none;
     padding-right: 2em;
   }
+  @media screen and (max-width: 450px) {
+    label {
+      display: block;
+    }
+    select {
+      margin-left: 0;
+    }
+  }
 </style>
