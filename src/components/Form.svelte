@@ -51,8 +51,10 @@
     background-color: white;
     transition: 0.3s;
     cursor: pointer;
+    box-shadow: 1px 1px 8px #888;
   }
   button:hover {
-    background-color: #cbcbcb;
+    background-color: #f5f5f5;
+    transform: scale(1.05);
   }
 </style>

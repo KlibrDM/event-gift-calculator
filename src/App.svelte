@@ -27,10 +27,10 @@
     padding: 40px;
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: #333;
     border-radius: 30px;
     box-sizing: border-box;
-    background-color: #8d2333;
+    background-color: white;
   }
   main > div {
     flex-grow: 1;
