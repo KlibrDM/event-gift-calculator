@@ -4,7 +4,17 @@
   let catDau: number = 0;
 
   const calculate = (event: number, location: number, relation: number) => {
-    catDau = event * location * relation;
+    let tempCatDau: number = event * location * relation;
+    //Round to nearest number by rule
+    if (tempCatDau < 1000) {
+      catDau = roundToNearest(tempCatDau, 50);
+    } else {
+      catDau = roundToNearest(tempCatDau, 100);
+    }
+  };
+
+  const roundToNearest = (number: number, nearest: number) => {
+    return Math.round(number / nearest) * nearest;
   };
 </script>
 
