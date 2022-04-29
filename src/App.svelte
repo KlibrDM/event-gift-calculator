@@ -31,6 +31,7 @@
     border-radius: 30px;
     box-sizing: border-box;
     background-color: white;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
   }
   main > div {
     flex-grow: 1;

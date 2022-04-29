@@ -51,7 +51,7 @@
     background-color: white;
     transition: 0.3s;
     cursor: pointer;
-    box-shadow: 1px 1px 8px #888;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
   }
   button:hover {
     background-color: #f5f5f5;
