@@ -1,6 +1,7 @@
 <script lang="ts">
   import { events, locations, relations } from "../config";
   import Select from "./Select.svelte";
+  import NumberInput from "./NumberInput.svelte";
 
   export let calculate: Function;
 
@@ -8,11 +9,12 @@
   let eventValue: number = events[0].value;
   let locationValue: number = locations[0].value;
   let relationValue: number = relations[0].value;
+  let peopleValue: number = 1;
 </script>
 
 <form
   on:submit|preventDefault={() => {
-    calculate(eventValue, locationValue, relationValue);
+    calculate(eventValue, locationValue, relationValue, peopleValue);
   }}
 >
   <Select
@@ -33,6 +35,7 @@
     bind:bindedValue={relationValue}
     options={relations}
   />
+  <NumberInput name="people" label="Persoane:" bind:bindedValue={peopleValue} />
   <button type="submit">Calculează</button>
 </form>
 
